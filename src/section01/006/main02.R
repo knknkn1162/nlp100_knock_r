@@ -3,7 +3,7 @@ bigram <- function(str) {
     str_split_1("") |>
     embed(2) |>
     as_tibble() |>
-    unite("z", V2,V1, sep="") |>
+    unite(z, V2:V1, sep="") |>
     pull()
   return(res)
 }
